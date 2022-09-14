@@ -1,0 +1,21 @@
+import Actions from "../actions"
+
+const initialState = {
+    count:0
+}
+
+const countReducer = (state = initialState, action) => {
+    switch(action.type){
+        case Actions.incrementCount: {
+            return {count:action.payload}
+        }
+        case Actions.decreamentCount: {
+            return {count:action.payload}
+        }
+    }
+}
+
+export default countReducer;
+
+
+countReducer(unde,kss)
