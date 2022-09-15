@@ -1,11 +1,11 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
 
 class Header extends React.Component{
     render(){
         return(
-            <div>Count</div>
+            <div>Count {this.props.count}</div>
         )
     }
 
@@ -17,6 +17,6 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchtoProps = {}
+const mapDispatchToProps = {}
 
-export default connect(mapStateToProps, mapDispatchtoProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
