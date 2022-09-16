@@ -1,7 +1,7 @@
 import Actions from "../actions"
 
 const initialState = {
-    count:0
+    count:0,
 }
 
 const countReducer = (state = initialState, action) => {
@@ -12,6 +12,7 @@ const countReducer = (state = initialState, action) => {
         case Actions.decreamentCount: {
             return {count:action.payload}
         }
+        default: return state
     }
 }
 

@@ -1,9 +1,9 @@
 import Actions from "."
 
-export const incrementCount = (payload) => {
+export const incrementCount = (count) => {
     return {
         type: Actions.incrementCount,
-        payload
+        payload: count
     }
 }
 
